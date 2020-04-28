@@ -1,0 +1,48 @@
+[
+    {
+        "id": "quit",
+        "keys":
+        [
+            "Escape"
+        ]
+    },
+    {
+        "id": "reloadLevel",
+        "keys":
+        [
+            "KeyR"
+        ]
+    },
+    {
+        "id": "up",
+        "keys":
+        [
+            "KeyW",
+            "ArrowUp"
+        ]
+    },
+    {
+        "id": "right",
+        "keys":
+        [
+            "KeyD",
+            "ArrowRight"
+        ]
+    },
+    {
+        "id": "down",
+        "keys":
+        [
+            "KeyS",
+            "ArrowDown"
+        ]
+    },
+    {
+        "id": "left",
+        "keys":
+        [
+            "KeyA",
+            "ArrowLeft"
+        ]
+    }
+]

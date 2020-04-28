@@ -1,0 +1,278 @@
+{
+    "assets":
+    [
+        {
+            "id": "player",
+            "type": "image",
+            "path": "assets/player.png"
+        },
+        {
+            "id": "key",
+            "type": "image",
+            "path": "assets/box.png"
+        }
+    ],
+    "elements":
+    [
+        {
+            "type": "rect",
+            "id": "wallE",
+            "function": "wall",
+            "coordinates":
+            {
+                "x1": 0,
+                "y1": 0,
+                "x2": 50,
+                "y2": 600,
+                "z": 0
+            },
+            "color":
+            {
+                "red": 53,
+                "green": 55,
+                "blue": 47,
+                "alpha": 1
+            }
+        },
+        {
+            "type": "rect",
+            "id": "wallS",
+            "function": "wall",
+            "coordinates":
+            {
+                "x1": 0,
+                "y1": 550,
+                "x2": 800,
+                "y2": 600,
+                "z": 0
+            },
+            "color":
+            {
+                "red": 53,
+                "green": 55,
+                "blue": 47,
+                "alpha": 1
+            }
+        },
+        {
+            "type": "rect",
+            "id": "wallW",
+            "function": "wall",
+            "coordinates":
+            {
+                "x1": 750,
+                "y1": 0,
+                "x2": 800,
+                "y2": 600,
+                "z": 0
+            },
+            "color":
+            {
+                "red": 53,
+                "green": 55,
+                "blue": 47,
+                "alpha": 1
+            }
+        },
+        {
+            "type": "rect",
+            "id": "platform1",
+            "function": "wall",
+            "coordinates":
+            {
+                "x1": 550,
+                "y1": 400,
+                "x2": 750,
+                "y2": 425,
+                "z": 0
+            },
+            "color":
+            {
+                "red": 153,
+                "green": 155,
+                "blue": 147,
+                "alpha": 1
+            }
+        },
+        {
+            "type": "rect",
+            "id": "platform2",
+            "function": "wall",
+            "coordinates":
+            {
+                "x1": 450,
+                "y1": 475,
+                "x2": 550,
+                "y2": 500,
+                "z": 0
+            },
+            "color":
+            {
+                "red": 153,
+                "green": 155,
+                "blue": 147,
+                "alpha": 1
+            }
+        },
+        {
+            "type": "rect",
+            "id": "platform3",
+            "function": "wall",
+            "coordinates":
+            {
+                "x1": 350,
+                "y1": 300,
+                "x2": 425,
+                "y2": 325,
+                "z": 0
+            },
+            "color":
+            {
+                "red": 153,
+                "green": 155,
+                "blue": 147,
+                "alpha": 1
+            }
+        },
+        {
+            "type": "rect",
+            "id": "platform4",
+            "function": "wall",
+            "coordinates":
+            {
+                "x1": 150,
+                "y1": 200,
+                "x2": 255,
+                "y2": 225,
+                "z": 0
+            },
+            "color":
+            {
+                "red": 153,
+                "green": 155,
+                "blue": 147,
+                "alpha": 1
+            }
+        },
+        {
+            "type": "rect",
+            "id": "platform5",
+            "function": "wall",
+            "coordinates":
+            {
+                "x1": 400,
+                "y1": 100,
+                "x2": 525,
+                "y2": 125,
+                "z": 0
+            },
+            "color":
+            {
+                "red": 153,
+                "green": 155,
+                "blue": 147,
+                "alpha": 1
+            }
+        },
+        {
+            "type": "rect",
+            "id": "platform6",
+            "function": "wall",
+            "coordinates":
+            {
+                "x1": 700,
+                "y1": 50,
+                "x2": 750,
+                "y2": 65,
+                "z": 0
+            },
+            "color":
+            {
+                "red": 195,
+                "green": 66,
+                "blue": 82,
+                "alpha": 1
+            }
+        },
+        {
+            "type": "rect",
+            "id": "door1",
+            "function": "door",
+            "levelIndex": "1",
+            "coordinates":
+            {
+                "x1": 500,
+                "y1": 0,
+                "x2": 525,
+                "y2": 100,
+                "z": 0
+            },
+            "color":
+            {
+                "red": 66,
+                "green": 195,
+                "blue": 82,
+                "alpha": 0.7
+            }
+        },
+        {
+            "type": "player",
+            "sprite": "player",
+            "coordinates":
+            {
+                "x": 400,
+                "y": 500,
+                "z": 0
+            }
+        },
+        {
+            "type": "sprite",
+            "sprite": "key",
+            "id": "key1",
+            "function": "key",
+            "coordinates":
+            {
+                "x": 725,
+                "y": 35,
+                "z": 0
+            },
+            "color":
+            {
+                "red": 66,
+                "green": 195,
+                "blue": 82
+            }
+        },
+        {
+            "type": "sprite",
+            "sprite": "key",
+            "id": "key2",
+            "function": "key",
+            "coordinates":
+            {
+                "x": 150,
+                "y": 350,
+                "z": 0
+            },
+            "color":
+            {
+                "red": 195,
+                "green": 66,
+                "blue": 82
+            }
+        }
+    ],
+    "interactions":
+    [
+        {
+            "trigger": "key1",
+            "target": "door1",
+            "action": "enable"
+        },
+        {
+            "trigger": "key2",
+            "target": "platform6",
+            "action": "disable"
+        }
+    ]
+}

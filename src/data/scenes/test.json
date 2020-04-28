@@ -1,0 +1,121 @@
+{
+    "assets":
+    [
+        {
+            "id": "box",
+            "type": "image",
+            "path": "assets/box.png"
+        },
+        {
+            "id": "player",
+            "type": "image",
+            "path": "assets/player.png"
+        }
+    ],
+    "elements":
+    [
+        {
+            "type": "sprite",
+            "sprite": "box",
+            "coordinates":
+            {
+                "x": 100,
+                "y": 100,
+                "z": 0
+            },
+            "color":
+            {
+                "red": 66,
+                "green": 195,
+                "blue": 82
+            }
+        },
+        {
+            "type": "sprite",
+            "sprite": "box",
+            "coordinates":
+            {
+                "x": 600,
+                "y": 100,
+                "z": 0
+            },
+            "color":
+            {
+                "red": 66,
+                "green": 195,
+                "blue": 82
+            }
+        },
+        {
+            "type": "rect",
+            "function": "wall",
+            "coordinates":
+            {
+                "x1": 0,
+                "y1": 0,
+                "x2": 50,
+                "y2": 600,
+                "z": 0
+            },
+            "color":
+            {
+                "red": 53,
+                "green": 55,
+                "blue": 47,
+                "alpha": 1
+            }
+        },
+        {
+            "type": "rect",
+            "function": "wall",
+            "coordinates":
+            {
+                "x1": 0,
+                "y1": 550,
+                "x2": 800,
+                "y2": 600,
+                "z": 0
+            },
+            "color":
+            {
+                "red": 53,
+                "green": 55,
+                "blue": 47,
+                "alpha": 1
+            }
+        },
+        {
+            "type": "rect",
+            "function": "door",
+            "levelIndex": "1",
+            "coordinates":
+            {
+                "x1": 775,
+                "y1": 450,
+                "x2": 800,
+                "y2": 550,
+                "z": 0
+            },
+            "color":
+            {
+                "red": 66,
+                "green": 195,
+                "blue": 82,
+                "alpha": 0.7
+            }
+        },
+        {
+            "type": "player",
+            "sprite": "player",
+            "coordinates":
+            {
+                "x": 400,
+                "y": 300,
+                "z": 0
+            }
+        }
+    ],
+    "interactions":
+    [
+    ]
+}
